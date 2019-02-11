@@ -1,34 +1,66 @@
 body {
+  width: 72.5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #FFFBF5;
   color: #373737;
-  width: 317px;
-  margin: 29px;
+  margin: 66px;
 }
 
-h1 {
-  font-family: "Karla";
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.hero {
+  font-family: 'Karla', sans-serif;
   font-size: 36px;
   font-weight: bold;
   line-height: 120%;
+  padding-top: 35px;
 }
 
-p {
-  font-family: "Karla";
+.byLine {
+  font-family: 'Karla', sans-serif;
   font-size: 18px;
   font-weight: bold;
-  padding-top: 35px;
+  padding-top: 75px;
   line-height: 120%;
+  display: flex;
+  justify-content: center;
 }
 
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content {
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .content {
+    width: 95%;
+  }
+}
+
+
 .container {
-  font-family: "Work Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   font-weight: 200;
   color: #F49C31;
-  margin: auto;
-  width: 85%;
-}
-.container img {
-  margin: auto;
-  width: 30px;
+  padding-top: 70px;
 }
