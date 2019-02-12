@@ -54,6 +54,26 @@ header {
 
 .project {
   padding-bottom: 50px;
+  display: flex;
+  width: 55%;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.projectImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.projectInfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
 }
 
 .heroSection {
@@ -101,15 +121,17 @@ header {
 
 .context {
   padding-bottom: 50px;
+  text-align: left;
 }
 
 .subtitle {
   font-family: 'Proxima Nova', sans-serif;
-  src: url(styles/fonts/Proxima Nova);
+  src: url('styles/fonts/Proxima Nova');
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
   text-decoration: underline;
+  text-align: left;
   padding: 15px 0px 15px 0px;
 }
 
@@ -144,7 +166,7 @@ header {
 }
 
 
-.container {
+.indicator {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,7 +185,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #373737;
+  background-color: rgba(55, 55, 55, .7);
   font-family: "Work Sans", sans-serif;
   src: url(styles/fonts/worksans);
   font-size: 18px;
@@ -171,14 +193,72 @@ header {
   margin: 50px 30px;
 }
 
+.navbarText {
+  display: flex;
+  justify-content: space-between;
+  width: 72.5%;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 72.5%;
+}
+
+.container {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.competitorIcon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.competitiveAnalysis {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
 .moreProjects {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
   width: 100%;
   height: 115px;
   background-color: #F49C31;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -186,8 +266,14 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: 'Proxima Nova', sans-serif;
-  src: url(styles/fonts/Proxima Nova);
+  src: url('styles/fonts/Proxima Nova');
   font-weight: 400;
   font-size: 36px;
   color: #FFFBF5;
+}
+
+.spacer {
+  border-bottom: 1px solid white;
+  width: 72.5%;
+  margin: 10px 0 5px 0;
 }
