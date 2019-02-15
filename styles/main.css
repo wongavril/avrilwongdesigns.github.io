@@ -6,14 +6,14 @@ body {
   background-color: #FFFBF5;
   color: #373737;
   font-family: 'Proxima Nova', sans-serif;
-  src: url(styles/fonts/Proxima Nova);
+  src: url('styles/fonts/Proxima Nova');
   font-size: 18px;
   line-height: 120%;
   margin-top: 30px;
 }
 
 header {
-  width: 72.5%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
 }
@@ -36,6 +36,7 @@ header {
 
 .hero {
   font-family: 'Karla', sans-serif;
+  src: url('styles/fonts/Karla');
   font-size: 36px;
   font-weight: bold;
   line-height: 120%;
@@ -44,6 +45,7 @@ header {
 
 .byLine {
   font-family: 'Karla', sans-serif;
+  src: url('styles/fonts/Karla');
   font-size: 18px;
   font-weight: bold;
   line-height: 120%;
@@ -91,7 +93,7 @@ header {
 
 .projectName {
   font-family: 'Karla', sans-serif;
-  src: url(styles/fonts/Karla);
+  src: url('styles/fonts/Karla');
   font-size: 48px;
   font-weight: bold;
   line-height: 120%;
@@ -112,16 +114,18 @@ header {
 
 .title {
   font-family: 'Karla', sans-serif;
-  src: url(styles/fonts/Karla);
+  src: url('styles/fonts/Karla');
   font-size: 36px;
-  text-align: center;
+  text-align: left;
   line-height: 130%;
-  padding-bottom: 30px;
+  width: 100%;
+  padding: 30px 0 20px 0;
 }
 
 .context {
   padding-bottom: 50px;
   text-align: left;
+  width: 100%;
 }
 
 .subtitle {
@@ -132,12 +136,13 @@ header {
   line-height: 120%;
   text-decoration: underline;
   text-align: left;
+  width: 100%;
   padding: 15px 0px 15px 0px;
 }
 
 .label {
-  font-family: "Work Sans", sans-serif;
-  src: url(styles/fonts/worksans);
+  font-family: 'Work Sans', sans-serif;
+  src: url('styles/fonts/worksans');
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
@@ -146,7 +151,7 @@ header {
 
 .caption {
   font-family: "Work Sans", sans-serif;
-  src: url(styles/fonts/worksans);
+  src: url('styles/fonts/worksans');
   font-size: 16px;
   line-height: 120%;
 }
@@ -185,9 +190,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(55, 55, 55, .7);
+  background-color: rgba(55, 55, 55, .6);
   font-family: "Work Sans", sans-serif;
-  src: url(styles/fonts/worksans);
+  src: url('styles/fonts/worksans');
   font-size: 18px;
   color: #FFFBF5;
   margin: 50px 30px;
@@ -196,20 +201,20 @@ header {
 .navbarText {
   display: flex;
   justify-content: space-between;
-  width: 72.5%;
+  width: 65%;
 }
 
 .mainContent {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  width: 72.5%;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
 }
 
 .container {
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .competitorIcon {
@@ -217,14 +222,7 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 50%;
-}
-
-.persona {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
+  margin: 30px 10px 30px 10px;
 }
 
 .competitiveAnalysis {
@@ -233,6 +231,15 @@ header {
   align-items: flex-start;
   flex-direction: column;
   width: 50%;
+  margin: 10px;
+}
+
+.persona {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 20px;
 }
 
 .research {
@@ -241,6 +248,31 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 50%;
+  margin: 0 10px 0 10px;
+}
+
+.userFlow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.mockup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 45%;
+  padding-right: 20px;
+}
+
+.mockupInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 55%
 }
 
 .moreProjects {
@@ -249,6 +281,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 0 15px 0;
 }
 
 footer {
