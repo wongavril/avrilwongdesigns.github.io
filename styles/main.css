@@ -1,3 +1,56 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('./fonts/Karla/Karla-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima Nova/ProximaNova-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./fonts/worksans/WorkSans-Regular.ttf');
+}
+
+.rotate90 {
+transform-origin: 50% 50%;
+transform: rotate(90deg);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.smoothContent {
+  padding-top: 35px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hamburgerMenu {
+  position: relative;
+}
+
+.extendedMenu {
+  position: absolute;
+  justify-content: space-evenly;
+  width: 200px;
+  top: 150px;
+  left: -86px;
+}
+
+.menuText {
+  color: #F49C31;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,8 +58,7 @@ body {
   align-items: center;
   background-color: #FFFBF5;
   color: #373737;
-  font-family: 'Proxima Nova', sans-serif;
-  src: url('styles/fonts/Proxima Nova');
+  font-family: 'Proxima Nova';
   font-size: 18px;
   line-height: 120%;
   margin-top: 30px;
@@ -35,8 +87,7 @@ header {
 }
 
 .hero {
-  font-family: 'Karla', sans-serif;
-  src: url('styles/fonts/Karla');
+  font-family: 'Karla';
   font-size: 36px;
   font-weight: bold;
   line-height: 120%;
@@ -44,8 +95,7 @@ header {
 }
 
 .byLine {
-  font-family: 'Karla', sans-serif;
-  src: url('styles/fonts/Karla');
+  font-family: 'Karla';
   font-size: 18px;
   font-weight: bold;
   line-height: 120%;
@@ -78,6 +128,21 @@ header {
   width: 50%;
 }
 
+@media screen and (max-width: 1150px) {
+  .project {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .projectInfo {
+    width: 450px;
+    align-items: center;
+  }
+  .projectDescription {
+    text-align: center;
+  }
+}
+
 .heroSection {
   display: flex;
   justify-content: center;
@@ -92,8 +157,7 @@ header {
 }
 
 .projectName {
-  font-family: 'Karla', sans-serif;
-  src: url('styles/fonts/Karla');
+  font-family: 'Karla';
   font-size: 48px;
   font-weight: bold;
   line-height: 120%;
@@ -113,8 +177,7 @@ header {
 }
 
 .title {
-  font-family: 'Karla', sans-serif;
-  src: url('styles/fonts/Karla');
+  font-family: 'Karla';
   font-size: 36px;
   text-align: left;
   line-height: 130%;
@@ -129,8 +192,7 @@ header {
 }
 
 .subtitle {
-  font-family: 'Proxima Nova', sans-serif;
-  src: url('styles/fonts/Proxima Nova');
+  font-family: 'Proxima Nova';
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
@@ -141,17 +203,15 @@ header {
 }
 
 .label {
-  font-family: 'Work Sans', sans-serif;
-  src: url('styles/fonts/worksans');
+  font-family: 'Work Sans';
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bolder;
   line-height: 120%;
   padding-bottom: 10px;
 }
 
 .caption {
-  font-family: "Work Sans", sans-serif;
-  src: url('styles/fonts/worksans');
+  font-family: 'Work Sans';
   font-size: 16px;
   line-height: 120%;
 }
@@ -176,12 +236,17 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans';
   font-size: 18px;
   font-weight: 200;
   line-height: 120%;
   color: #F49C31;
   padding: 70px 40px;
+}
+
+.navbarContainer {
+  margin: 50px 30px;
+  width: 100%;
 }
 
 .navbar {
@@ -191,11 +256,13 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(55, 55, 55, .6);
-  font-family: "Work Sans", sans-serif;
-  src: url('styles/fonts/worksans');
+  font-family: 'Work Sans';
   font-size: 18px;
   color: #FFFBF5;
-  margin: 50px 30px;
+}
+
+.navbarButton {
+  width: 105px;
 }
 
 .navbarText {
@@ -251,6 +318,18 @@ header {
   margin: 0 10px 0 10px;
 }
 
+.multipleImageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.doubleImageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
 .userFlow {
   display: flex;
   flex-direction: column;
@@ -298,8 +377,7 @@ footer {
   display: block;
   justify-content: center;
   align-items: center;
-  font-family: 'Proxima Nova', sans-serif;
-  src: url('styles/fonts/Proxima Nova');
+  font-family: 'Proxima Nova';
   font-weight: 400;
   font-size: 36px;
   color: #FFFBF5;
